@@ -1,0 +1,13 @@
+import(MASS)
+import(Matrix)
+import(glasso)
+import(QUIC)
+
+export(rsggm)
+export(rsggm.generator)
+export(out)
+
+S3method("print","rsggm")
+
+importFrom("methods", "as")
+importFrom("stats", "rbinom", "runif")

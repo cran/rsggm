@@ -128,9 +128,17 @@ rsggm <- function(x, gamma, lambda, nlambda = 10, delta = 0.2, penalty.offdiag =
                 }
                 
                 if (method == "glasso") {
-                  result_rlasso_glasso <- glasso(S_new2, (1 + gamma_element) * lambda_mat)
-                  Omega <- result_rlasso_glasso$wi
-                  plogL_weight0[i_weight] <- result_rlasso_glasso$loglik * 2/p
+                    #if(packageVersion("glasso") < 1.11){
+                        result_rlasso_glasso <- glasso(S_new2, (1 + gamma_element) * lambda_mat) #glasso 1.10
+                    #}else{
+                    #    result_rlasso_glasso <- glasso(S_new2, (1 + gamma_element) * lambda_mat, nobs=N) #glasso 1.11
+                    #}
+                    Omega <- result_rlasso_glasso$wi
+                    #if(packageVersion("glasso") < 1.11){
+                        plogL_weight0[i_weight] <- result_rlasso_glasso$loglik * 2/p #glasso 1.10
+                    #}else{
+                    #    plogL_weight0[i_weight] <- result_rlasso_glasso$loglik * 2/N #glasso 1.11
+                    #}
                 }
                 
                 tol.plogL_weight0 <- plogL_weight0[i_weight] - plogL_weight0_current

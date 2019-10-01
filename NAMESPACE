@@ -11,3 +11,4 @@ S3method("print","rsggm")
 
 importFrom("methods", "as")
 importFrom("stats", "rbinom", "runif")
+importFrom("utils", "packageVersion")

@@ -37,11 +37,12 @@ A value of lambda.
 
 \references{
 %% ~put references to the literature/web site here ~
-Hirose, K. and Fujisawa, H. (2015). 
-\emph{Robust sparse Gaussian graphical modeling, submitted},\cr
+Hirose, K. and Fujisawa, H. (2017). 
+\emph{Robust sparse Gaussian graphical modeling, Journal of Multivariate Analysis, 161, 172-190.}\cr
+%  \url{https://www.sciencedirect.com/science/article/pii/S0047259X17302488}\cr
 Fujisawa, H., and Eguchi, S. (2008). 
 \emph{Robust parameter estimation with a small bias against heavy contamination, Journal of Multivariate Analysis, 99(9), 2053-2081.}
-  \url{http://www.sciencedirect.com/science/article/pii/S0047259X08000456}\cr
+%  \url{http://www.sciencedirect.com/science/article/pii/S0047259X08000456}\cr
 }
 \author{
 Kei Hirose\cr
